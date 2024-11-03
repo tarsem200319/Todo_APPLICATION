@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded",function(){
-    input = document.querySelector("input");
-    button = document.querySelector("button");
-    list = document.querySelector(".list");
+    let input = document.querySelector("input");
+    let button = document.querySelector("button");
+    let list = document.querySelector(".list");
 
     button.addEventListener("click",function(){
         if(input.value.trim() !== ""){
@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded",function(){
             span.innerText = input.value;
             newList.appendChild(span);
 
-            List.appendChild(newList);
+            list.appendChild(newList);
         }
     })
 })
