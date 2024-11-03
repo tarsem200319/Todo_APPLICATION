@@ -12,9 +12,13 @@ document.addEventListener("DOMContentLoaded",function(){
             let deleteButton=document.createElement("span");
             deleteButton.innerHTML=`<i class="fa-solid 
             fa-trash"></i>`;
-            deleteButton.className = "delete-Btn";
-            newList.appebdChild(deleteButton)
+            deleteButton.className="delete-Btn";
+            deleteButton.addEventListener("click",function(){
+                list.remove(newList)
+            })
+            newList.appendChild(deleteButton)
             list.appendChild(newList)
+            input.value="";
         }
     })
 })
