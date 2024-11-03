@@ -9,8 +9,12 @@ document.addEventListener("DOMContentLoaded",function(){
             let span = document.createElement("span");
             span.innerText = input.value;
             newList.appendChild(span);
-
-            list.appendChild(newList);
+            let deleteButton=document.createElement("span");
+            deleteButton.innerHTML=`<i class="fa-solid 
+            fa-trash"></i>`;
+            deleteButton.className = "delete-Btn";
+            newList.appebdChild(deleteButton)
+            list.appendChild(newList)
         }
     })
 })
