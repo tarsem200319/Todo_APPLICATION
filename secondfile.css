@@ -67,3 +67,6 @@ body,html{
     color: red;
     size: 10px;
 }
+.delete-Btn:hover{
+    color: darkred;
+}
